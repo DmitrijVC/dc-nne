@@ -1,0 +1,26 @@
+[package]
+name = "dc-nne"
+version = "0.1.0"
+authors = ["FssAy <49795742+DmitrijVC@users.noreply.github.com>"]
+edition = "2018"
+
+[dependencies]
+tokio = "0.2.22"
+
+[dependencies.serenity]
+git = "https://github.com/DmitrijVC/serenity"
+branch = "current"
+commit = "3c5ef2ab"
+default-features = false
+features = [
+    "builder",
+    "client",
+    "framework",
+    "gateway",
+    "model",
+    "http",
+    "standard_framework",
+    "utils",
+    "rustls_backend",
+    "cache"
+]
