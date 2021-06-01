@@ -7,7 +7,7 @@ use serenity::{
     prelude::*,
 };
 
-const EMOTE_SIZES: [u8; 3] = [32u8, 64u8, 128u8];
+const EMOTE_SIZES: [u8; 4] = [32u8, 40u8, 64u8, 128u8];
 
 
 struct Handler {
@@ -58,7 +58,7 @@ async fn main() {
     let args: Vec<String> = env::args().collect();
 
     if args.len() < 1 {
-        println!("USAGE: [<EMOTE_SIZE>]\n\t[optional] EMOTE_SIZES: 32, 64, 128");
+        println!("USAGE: [<EMOTE_SIZE>]\n\t[optional] EMOTE_SIZES: 32, 40, 64, 128");
         return;
     }
 
